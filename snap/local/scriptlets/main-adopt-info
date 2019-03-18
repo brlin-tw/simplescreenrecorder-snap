@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Pull the source of the main part and set the snap's version based on it
+# Extract and set the snap's version from the main part
 # 林博仁(Buo-ren, Lin) <Buo.Ren.Lin@gmail.com> © 2019
 
 set \
@@ -39,10 +39,6 @@ init(){
             ;;
         esac
     done
-
-    if [ "${flag_dry_run}" = false ]; then
-        snapcraftctl pull
-    fi
 
     if ! git describe &>/dev/null; then
         upstream_version=unknown
