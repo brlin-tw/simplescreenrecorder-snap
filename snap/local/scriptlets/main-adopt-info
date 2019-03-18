@@ -32,7 +32,7 @@ init(){
             ;;
             *)
                 printf -- \
-                    'main-pull: Error: Invalid command-line argument.\n' \
+                    'main-adopt-info: Error: Invalid command-line argument.\n' \
                     >&2
                 print_usage
                 exit 1
@@ -78,7 +78,7 @@ init(){
     snap_version_string="${upstream_version}+pkg-${packaging_revision}"
 
     printf -- \
-        'main-pull: Setting snap version to "%s".\n' \
+        'main-adopt-info: Setting snap version to "%s".\n' \
         "${snap_version_string}"
     if [ "${flag_dry_run}" = false ]; then
         snapcraftctl set-version \
@@ -89,7 +89,7 @@ init(){
 }
 
 print_usage(){
-    printf -- 'Usage: main-pull [options] _snap_name_\n'
+    printf -- 'Usage: main-adopt-info [options] _snap_name_\n'
     printf -- 'options: [--debug|--dry-run|--help]\n'
 }
 
