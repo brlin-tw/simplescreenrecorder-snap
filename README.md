@@ -10,7 +10,7 @@ Snapcrafters ([join us](https://forum.snapcraft.io/t/join-snapcrafters/1325)) ar
   - It is recommended to *avoid forking the template repository* unless you're working on the template itself because you can only fork a repository once
 - [x] Update the description of the repository
 - [x] Update logos and references to `SimpleScreenRecorder`, `simplescreenrecorder` and other placeholder names in `README.md`, `snap/README.md`, and `snap/snapcraft.yaml`
-- [ ] Add upstream contact information to this `README.md`
+- [x] Add upstream contact information to this `README.md`
 - [ ] Create a snap that runs in `devmode`, [or in `classic` confinement if that's not possible](https://forum.snapcraft.io/t/subtle-differences-between-devmode-and-classic-confinement-snaps/7267)
     - [ ] If the snap must be packaged under `classic` confinement, file a [classic confinement request](https://forum.snapcraft.io/t/process-for-reviewing-classic-confinement-snaps/1460) topic in the Snapcraft Forum, under the `store` topic category - [template](https://github.com/Lin-Buo-Ren/snapcrafters-template-plus/wiki/Classic-Confinement-Request-Template) - [link]()
 - [ ] Add a screenshot to `snap/README.md`
