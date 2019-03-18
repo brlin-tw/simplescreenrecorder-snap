@@ -3,7 +3,7 @@
 	Use the Staticaly service for easy access to in-repo pictures:
 	https://www.staticaly.com/
 -->
-<!img src='gui/simplescreenrecorder.png' title='Icon of SimpleScreenRecorder' alt='Icon of SimpleScreenRecorder' />
+<img src='gui/simplescreenrecorder.png' title='Icon of SimpleScreenRecorder' alt='Icon of SimpleScreenRecorder' />
 
 **This is the unofficial snap for SimpleScreenRecorder**, *"A screen recorder for Linux"*. It works on Ubuntu, Fedora, Debian, and other major Linux distributions.
 
