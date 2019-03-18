@@ -104,6 +104,8 @@ parts:
       "${SNAPCRAFT_STAGE}"/scriptlets/main-adopt-info
 
     plugin: cmake
+    build-packages:
+    - pkg-config
 
     override-prime: |
       set \
