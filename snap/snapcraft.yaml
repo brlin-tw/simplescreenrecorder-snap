@@ -17,9 +17,18 @@ name: simplescreenrecorder
 title: SimpleScreenRecorder (UNOFFICIAL)
 summary: A screen recorder for Linux
 description: |
-  SimpleScreenRecorder is a screen recorder for Linux. Despite the name, this program is actually quite complex. It's 'simple' in the sense that it's easier to use than ffmpeg/avconv or VLC :).
+  SimpleScreenRecorder is a screen recorder for Linux. Despite the name,
+  this program is actually quite complex. It's 'simple' in the sense
+  that it's easier to use than ffmpeg/avconv or VLC :).
 
-  NOTE: This is NOT an official SimpleScreenRecorder distribution, refer [the snap's issue tracker](https://github.com/Lin-Buo-Ren/simplescreenrecorder-snap/issues) for support.
+  **Known issue**
+  Currently OpenGL recording is not supported by this build due to the
+  confinement and library separation nature of snap apps.
+
+  **Disclaimer**
+  This is NOT an official SimpleScreenRecorder distribution, refer [the
+  snap's issue tracker](https://github.com/Lin-Buo-Ren/simplescreenrecorder-snap/issues)
+  for support.
 
 icon: snap/gui/simplescreenrecorder.png
 license: GPL-3.0
