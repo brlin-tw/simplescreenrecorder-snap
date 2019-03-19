@@ -119,8 +119,8 @@ parts:
     - scriptlets
 
     source: https://github.com/MaartenBaert/ssr.git
-    source-tag: 0.3.11
-    source-depth: 1
+    #source-tag: 0.3.11
+    source-depth: 60
     override-pull: |
       set -o nounset
       snapcraftctl pull
@@ -147,6 +147,7 @@ parts:
     - libqt5x11extras5-dev
     - libswscale-dev
     - libxi-dev
+    - libxinerama-dev
     - pkg-config
     - qt5-default
     - qt5-qmake
@@ -163,6 +164,7 @@ parts:
     - libqt5x11extras5
     - libswscale4
     - libxi6
+    - libxinerama1
     organize:
       snap/$SNAPCRAFT_PROJECT_NAME/current: /
     stage:
