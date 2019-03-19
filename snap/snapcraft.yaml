@@ -51,7 +51,7 @@ license: GPL-3.0
 adopt-info: main
 base: core18
 confinement: strict
-grade: devel
+grade: stable
 
 parts:
   # Files to patch the files in the snap
