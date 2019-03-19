@@ -7,9 +7,7 @@
 
 **This is the unofficial snap for SimpleScreenRecorder**, *"A screen recorder for Linux"*. It works on Ubuntu, Fedora, Debian, and other major Linux distributions.
 
-<!-- Uncomment and modify this when you are provided a build status badge
 [![Build Status Badge of the `simplescreenrecorder` Snap](https://build.snapcraft.io/badge/Lin-Buo-Ren/simplescreenrecorder-snap.svg "Build Status of the `simplescreenrecorder` snap")](https://build.snapcraft.io/user/Lin-Buo-Ren/simplescreenrecorder-snap)
--->
 
 ![Screenshot of the Snapped Application](local/screenshots/welcome-screen.png "Screenshot of the Snapped Application")
 
