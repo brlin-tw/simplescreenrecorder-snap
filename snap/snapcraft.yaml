@@ -50,7 +50,7 @@ license: GPL-3.0
 
 adopt-info: main
 base: core18
-confinement: devmode
+confinement: strict
 grade: devel
 
 parts:
