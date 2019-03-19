@@ -25,6 +25,7 @@ description: |
   codecs are supported.
 
   **Key features**
+
   * Synchronizes audio and video properly.
   * Reduces the video frame rate if your computer is too slow.
   * Fully multithreaded: small delays in any of the components will
