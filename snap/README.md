@@ -7,7 +7,7 @@
 
 **This is the unofficial snap for SimpleScreenRecorder**, *"A screen recorder for Linux"*. It works on Ubuntu, Fedora, Debian, and other major Linux distributions.
 
-[![Build Status Badge of the `simplescreenrecorder` Snap](https://build.snapcraft.io/badge/Lin-Buo-Ren/simplescreenrecorder-snap.svg "Build Status of the `simplescreenrecorder` snap")](https://build.snapcraft.io/user/Lin-Buo-Ren/simplescreenrecorder-snap)
+[![Build Status Badge of the `simplescreenrecorder-brlin` Snap](https://build.snapcraft.io/badge/Lin-Buo-Ren/simplescreenrecorder-snap.svg "Build Status ofsimplescreenrecorder-brlin` snap")](https://build.snapcraft.io/user/Lin-Buo-Ren/simplescreenrecorder-snap)
 
 ![Screenshot of the Snapped Application](local/screenshots/welcome-screen.png "Screenshot of the Snapped Application")
 
@@ -18,23 +18,23 @@ Published for <img src="http://anything.codes/slack-emoji-for-techies/emoji/tux.
 
 ### In a Terminal
     # Install the snap #
-    sudo snap install --channel=edge --devmode simplescreenrecorder
-    #sudo snap install --channel=beta simplescreenrecorder
-    #sudo snap install simplescreenrecorder
-
+    sudo snap install --channel=edge --devmode simplescreenrecorder-brlin
+    #sudo snap install --channel=beta simplescreenrecorder-brlin
+    #sudo snap install simplescreenrecorder-brlin
+    
     # Connect the snap to optional security confinement interfaces #
     ## To allow access to ALSA devices ##
     sudo snap install core
-    sudo snap connect simplescreenrecorder:alsa
+    sudo snap connect simplescreenrecorder-brlin:alsa
     
     # Launch the application #
-    simplescreenrecorder
+    simplescreenrecorder-brlin
     
     ## If you have another existing installation ##
-    snap run simplescreenrecorder
+    snap run simplescreenrecorder-brlin
 
 ### The Graphical Way
-[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/simplescreenrecorder)
+[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/simplescreenrecorder-brlin)
 
 ## What is Working
 * Launch
