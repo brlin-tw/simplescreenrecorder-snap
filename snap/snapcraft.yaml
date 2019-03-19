@@ -13,7 +13,7 @@
 #   https://forum.snapcraft.io/c/doc
 # For support refer to the snapcraft section in the Snapcraft Forum:
 # https://forum.snapcraft.io/c/snapcraft
-name: simplescreenrecorder
+name: simplescreenrecorder-brlin
 title: SimpleScreenRecorder (UNOFFICIAL)
 summary: A feature-rich screen recorder
 description: |
@@ -175,7 +175,7 @@ parts:
     - share/appdata/simplescreenrecorder.appdata.xml
 
 apps:
-  simplescreenrecorder:
+  simplescreenrecorder-brlin:
     adapter: full
     command: bin/simplescreenrecorder
     command-chain:
