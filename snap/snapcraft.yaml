@@ -128,6 +128,10 @@ parts:
     # Fix profiles, translations
     - -DCMAKE_INSTALL_DATAROOTDIR=/snap/$SNAPCRAFT_PROJECT_NAME/current/share
 
+    # Disable OpenGL recording support as it's not possible due to the confined nature of snaps and also for non i386/AMD64 architecture build from source compatibility
+    - -DWITH_OPENGL_RECORDING=FALSE
+    - -DWITH_GLINJECT=FALSE
+
     - -DWITH_QT5=TRUE
     build-packages:
     # https://github.com/MaartenBaert/ssr#build-dependencies
