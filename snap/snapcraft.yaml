@@ -127,6 +127,7 @@ parts:
     configflags:
     # Fix profiles, translations
     - -DCMAKE_INSTALL_DATAROOTDIR=/snap/$SNAPCRAFT_PROJECT_NAME/current/share
+
     - -DWITH_QT5=TRUE
     build-packages:
     # https://github.com/MaartenBaert/ssr#build-dependencies
