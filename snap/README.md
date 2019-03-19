@@ -25,6 +25,10 @@ Published for <img src="http://anything.codes/slack-emoji-for-techies/emoji/tux.
     sudo snap install core
     sudo snap connect simplescreenrecorder-brlin:alsa
     
+    ## TO allow SimpleScreenRecorder to save recordings to `/media` or `/mnt`
+    sudo snap install core
+    sudo snap connect simplescreenrecorder-brlin:removable-media
+    
     # Launch the application #
     simplescreenrecorder-brlin
     
