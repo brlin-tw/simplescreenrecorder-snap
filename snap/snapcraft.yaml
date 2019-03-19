@@ -33,7 +33,7 @@ description: |
     better performance on computers with multiple processors.
   * Can also do live streaming (experimental).
 
-  **Known issue**
+  **Known issues**
 
   Currently OpenGL recording is not supported by this build due to the
   confinement and library separation nature of snap apps.
