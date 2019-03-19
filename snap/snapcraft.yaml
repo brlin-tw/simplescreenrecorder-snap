@@ -125,6 +125,8 @@ parts:
 
     plugin: cmake
     configflags:
+    # Fix profiles, translations
+    - -DCMAKE_INSTALL_DATAROOTDIR=/snap/$SNAPCRAFT_PROJECT_NAME/current/share
     - -DWITH_QT5=TRUE
     build-packages:
     # https://github.com/MaartenBaert/ssr#build-dependencies
@@ -153,6 +155,11 @@ parts:
     - libqt5x11extras5
     - libswscale4
     - libxi6
+    organize:
+      snap/$SNAPCRAFT_PROJECT_NAME/current: /
+    stage:
+    # Drop remnants from organizing
+    - -snap
     override-prime: |
       set \
         -o nounset
