@@ -5,7 +5,7 @@
 -->
 <img src='gui/simplescreenrecorder.png' title='Icon of SimpleScreenRecorder' alt='Icon of SimpleScreenRecorder' />
 
-**This is the unofficial snap for SimpleScreenRecorder**, *"A screen recorder for Linux"*. It works on Ubuntu, Fedora, Debian, and other major Linux distributions.
+**This is the unofficial snap for SimpleScreenRecorder**, *"A feature-rich screen recorder"*. It works on Ubuntu, Fedora, Debian, and other major Linux distributions.
 
 [![Build Status Badge of the `simplescreenrecorder-brlin` Snap](https://build.snapcraft.io/badge/Lin-Buo-Ren/simplescreenrecorder-snap.svg "Build Status ofsimplescreenrecorder-brlin` snap")](https://build.snapcraft.io/user/Lin-Buo-Ren/simplescreenrecorder-snap)
 
