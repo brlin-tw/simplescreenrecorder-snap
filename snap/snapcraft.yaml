@@ -128,7 +128,7 @@ parts:
 
     plugin: cmake
     configflags:
-    # Fix profiles, translations
+    # Fix output profiles and localization data access
     - -DCMAKE_INSTALL_DATAROOTDIR=/snap/$SNAPCRAFT_PROJECT_NAME/current/share
 
     # Disable OpenGL recording support as it's not possible due to the confined nature of snaps and also for non i386/AMD64 architecture build from source compatibility
