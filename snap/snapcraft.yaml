@@ -154,6 +154,9 @@ parts:
     - qtbase5-dev
     - qttools5-dev-tools
     stage-packages:
+    # Used in button and menu entries
+    - breeze-icon-theme
+
     - libasound2
     #- libavcodec57
     - libavcodec-extra57
