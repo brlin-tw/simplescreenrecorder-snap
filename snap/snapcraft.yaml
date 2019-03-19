@@ -33,10 +33,12 @@ description: |
   * Can also do live streaming (experimental).
 
   **Known issue**
+
   Currently OpenGL recording is not supported by this build due to the
   confinement and library separation nature of snap apps.
 
   **Disclaimer**
+
   This is NOT an official SimpleScreenRecorder distribution, refer [the
   snap's issue tracker](https://github.com/Lin-Buo-Ren/simplescreenrecorder-snap/issues)
   for support.
