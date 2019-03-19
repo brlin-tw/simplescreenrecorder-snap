@@ -197,8 +197,8 @@ plugs:
   home:
   removable-media: # Non-A/C
 
-  # Network access
-  #network:
+  # Network access (livestreaming support?)
+  network:
 
 layout:
   /usr/share/alsa:
