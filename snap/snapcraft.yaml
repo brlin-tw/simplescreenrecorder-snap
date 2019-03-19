@@ -15,11 +15,22 @@
 # https://forum.snapcraft.io/c/snapcraft
 name: simplescreenrecorder
 title: SimpleScreenRecorder (UNOFFICIAL)
-summary: A screen recorder for Linux
+summary: A feature-rich screen recorder
 description: |
-  SimpleScreenRecorder is a screen recorder for Linux. Despite the name,
-  this program is actually quite complex. It's 'simple' in the sense
-  that it's easier to use than ffmpeg/avconv or VLC :).
+  SimpleScreenRecorder is a feature-rich screen recorder that supports
+  X11 and OpenGL. It has a Qt-based graphical user interface. It can
+  record the entire screen or part of it, or record OpenGL applications
+  directly(currently not supported in snap distribution). The recording
+  can be paused and resumed at any time. Many different file formats and
+  codecs are supported.
+
+  **Key features**
+  * Synchronizes audio and video properly.
+  * Reduces the video frame rate if your computer is too slow.
+  * Fully multithreaded: small delays in any of the components will
+    never block the other components, resulting is smoother video and
+    better performance on computers with multiple processors.
+  * Can also do live streaming (experimental).
 
   **Known issue**
   Currently OpenGL recording is not supported by this build due to the
@@ -150,6 +161,12 @@ parts:
 
       "${SNAPCRAFT_STAGE}"/patching/patch-desktop-entries.bash
 
+    # Avoid using description from appdata until custom override is supported
+    # Bug #1820797 “Snapcraft should allow prepending/appending additional text from description extracted from adopt-info” : Bugs : Snapcraft
+    # https://bugs.launchpad.net/snapcraft/+bug/1820797
+    parse-info:
+    - share/appdata/simplescreenrecorder.appdata.xml
+
 apps:
   simplescreenrecorder:
     adapter: full
@@ -158,6 +175,7 @@ apps:
     - bin/desktop-launch
     - bin/simplescreenrecorder-launch
 
+    common-id: simplescreenrecorder.desktop
     desktop: share/applications/simplescreenrecorder.desktop
 
 plugs:
