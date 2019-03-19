@@ -18,8 +18,7 @@ Published for <img src="http://anything.codes/slack-emoji-for-techies/emoji/tux.
 
 ### In a Terminal
     # Install the snap #
-    sudo snap install --channel=edge --devmode simplescreenrecorder-brlin
-    #sudo snap install --channel=beta simplescreenrecorder-brlin
+    sudo snap install --channel=beta simplescreenrecorder-brlin
     #sudo snap install simplescreenrecorder-brlin
     
     # Connect the snap to optional security confinement interfaces #
