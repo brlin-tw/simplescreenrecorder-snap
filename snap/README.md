@@ -15,7 +15,6 @@
 
 Published for <img src="http://anything.codes/slack-emoji-for-techies/emoji/tux.png" align="top" width="24" /> with 💝 by Snapcrafters
 
-<!-- Uncomment and modify this when you have published the snap to the Snap Store
 ## Installation
 ([Don't have snapd installed?](https://snapcraft.io/docs/core/install))
 
@@ -24,22 +23,20 @@ Published for <img src="http://anything.codes/slack-emoji-for-techies/emoji/tux.
     sudo snap install --channel=edge --devmode simplescreenrecorder
     #sudo snap install --channel=beta simplescreenrecorder
     #sudo snap install simplescreenrecorder
-    
-    # Connect the snap to essential security confinement interfaces #
-    ## (Proper reasoning for connecting _plug_name_) ##
-    sudo snap connect simplescreenrecorder:_plug_name_
-    
+
     # Connect the snap to optional security confinement interfaces #
-    ## (Proper reasoning for connecting _plug_name_) ##
-    sudo snap connect simplescreenrecorder:_plug_name_
+    ## To allow access to ALSA devices ##
+    sudo snap install core
+    sudo snap connect simplescreenrecorder:alsa
     
     # Launch the application #
     simplescreenrecorder
-    snap run simplescreenrecorder # If you have another existing installation
+    
+    ## If you have another existing installation ##
+    snap run simplescreenrecorder
 
 ### The Graphical Way
 [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/simplescreenrecorder)
--->
 
 <!-- Uncomment when you have test results
 ## What is Working
