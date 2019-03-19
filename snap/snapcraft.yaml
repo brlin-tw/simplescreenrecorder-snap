@@ -104,9 +104,35 @@ parts:
       "${SNAPCRAFT_STAGE}"/scriptlets/main-adopt-info
 
     plugin: cmake
+    configflags:
+    - -DWITH_QT5=TRUE
     build-packages:
+    # https://github.com/MaartenBaert/ssr#build-dependencies
+    - libasound2-dev
+    - libavcodec-dev
+    - libavformat-dev
+    - libavutil-dev
+    - libjack-dev
+    - libpulse-dev
+    - libqt5x11extras5-dev
+    - libswscale-dev
+    - libxi-dev
     - pkg-config
-
+    - qt5-default
+    - qt5-qmake
+    - qtbase5-dev
+    - qttools5-dev-tools
+    stage-packages:
+    - libasound2
+    #- libavcodec57
+    - libavcodec-extra57
+    - libavformat57
+    - libavutil55
+    - libjack0
+    - libpulse0
+    - libqt5x11extras5
+    - libswscale4
+    - libxi6
     override-prime: |
       set \
         -o nounset
@@ -123,9 +149,13 @@ apps:
     - bin/desktop-launch
     - bin/simplescreenrecorder-launch
 
-    #desktop: share/applications/simplescreenrecorder.desktop
+    desktop: share/applications/simplescreenrecorder.desktop
 
 plugs:
+  # Audio access
+  alsa: # Non-A/C
+  pulseaudio:
+
   # For snaps with a graphical user interface:
   desktop:
   desktop-legacy:
@@ -133,11 +163,16 @@ plugs:
   unity7:
   wayland:
 
+  # T.B.D.
+  opengl:
+
   # Storage access
-  #home:
-  #removable-media: # Non-A/C
+  home:
+  removable-media: # Non-A/C
 
   # Network access
   #network:
 
-#slots:
+layout:
+  /usr/share/alsa:
+    bind: $SNAP/usr/share/alsa
