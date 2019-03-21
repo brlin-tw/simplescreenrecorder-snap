@@ -168,6 +168,10 @@ parts:
     - libswscale4
     - libxi6
     - libxinerama1
+
+    # gtk-common-themes support
+    - qt5-gtk-platformtheme
+
     organize:
       snap/$SNAPCRAFT_PROJECT_NAME/current: /
     stage:
@@ -197,6 +201,10 @@ apps:
 
     common-id: simplescreenrecorder.desktop
     desktop: share/applications/simplescreenrecorder.desktop
+    #environment:
+      # gtk-common-themes support
+      # DISABLED: Got overrided by desktop-launch(`appmenu-qt5`), implement in snap launcher instead
+      #QT_QPA_PLATFORMTHEME: gtk3
 
 plugs:
   # Audio access
@@ -209,6 +217,23 @@ plugs:
   x11:
   unity7:
   wayland:
+
+  # To allow wayland apps access system theme settings
+  gsettings:
+
+  # gtk-common-themes support
+  gtk-3-themes:
+    interface: content
+    target: $SNAP/data-dir/themes
+    default-provider: gtk-common-themes:gtk-3-themes
+  icon-themes:
+    interface: content
+    target: $SNAP/data-dir/icons
+    default-provider: gtk-common-themes:icon-themes
+  sound-themes:
+    interface: content
+    target: $SNAP/data-dir/sounds
+    default-provider: gtk-common-themes:sounds-themes
 
   # T.B.D.
   opengl:

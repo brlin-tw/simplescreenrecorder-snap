@@ -7,7 +7,8 @@ set \
 	-o nounset \
 	-o pipefail
 
-#export IMPORTANT_ENVIRONMENT_VARIABLE=value
+# gtk-common-themes support
+export QT_QPA_PLATFORMTHEME=gtk3
 
 # Finally run the next part of the command chain
 exec "${@}"
