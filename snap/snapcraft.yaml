@@ -119,7 +119,7 @@ parts:
     - scriptlets
 
     source: https://github.com/MaartenBaert/ssr.git
-    #source-tag: 0.3.11
+    source-tag: 0.3.11
     source-depth: 60
     override-pull: |
       set -o nounset
