@@ -110,6 +110,19 @@ parts:
     - xdg-user-dirs
     - fcitx-frontend-qt5
 
+  # platformtheme to make qt apps looks more like gnome apps
+  # gtk-common-themes support
+  qgnomeplatform:
+    source: https://github.com/FedoraQt/QGnomePlatform.git
+    plugin: qmake
+    qt-version: qt5
+    build-packages:
+    - qtbase5-dev
+    - qtbase5-private-dev
+    - libgtk-3-dev
+    stage-packages:
+    - libgtk-3-0
+
   main:
     after:
     # for patch-desktop-entries.*
@@ -168,9 +181,6 @@ parts:
     - libswscale4
     - libxi6
     - libxinerama1
-
-    # gtk-common-themes support
-    - qt5-gtk-platformtheme
 
     organize:
       snap/$SNAPCRAFT_PROJECT_NAME/current: /
